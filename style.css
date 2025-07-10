@@ -1,0 +1,180 @@
+/* Hishjam Protof's Personal Website */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /*  dark overlay */
+  z-index: -1;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('./assets/castle.png') no-repeat center top;
+  background-size: cover;
+  background-position: center -50px;
+
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+  backdrop-filter: brightness(0.9) blur(1px);
+}
+
+
+
+.rain {
+  background-image: url('./assets/rain.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.07;
+  animation: rain-animation 0.4s linear infinite;
+}
+
+@keyframes rain-animation {
+  from { background-position: 0 0; }
+  to { background-position: 20% 100%; }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6c5ce7;
+}
+
+.right {
+  line-height: 1;
+  flex: 2;
+  padding: 20px 40px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: -10px;
+}
+
+.highlight {
+  color: #6c5ce7;
+}
+
+.highlight-secondary {
+  color: #a29bfe;
+}
+
+.bio {
+  font-size: 1.2em;
+  max-width: 640px;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin-top: 23px;
+  margin-right: 15px;
+  font-size: 34px;
+  color: #bbb;
+  background: #1f1f1f;
+  border-radius: 50%;
+  padding: 4px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 34px;
+  transition: transform 0.3s ease, background 0.3s, color 0.3s, box-shadow 0.3s;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  background: #6c5ce7;
+  transform: scale(1.2) rotate(3deg);
+  box-shadow: 0 0 20px #6c5ce7, 0 0 40px #6c5ce780;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 14px 52px;
+  background-color: #6c5ce7;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #5a4dd1;
+}
+
+
+
+.typing {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.2em; 
+  color: #6c5ce7; 
+}
+
+.typing::after {
+  content: "Developer";
+  animation: words 10s steps(1, end) infinite, cursor 0.7s steps(1) infinite;
+  padding-left: 8px;
+  border-right: 3px solid #6c5ce7; 
+  white-space: nowrap;
+}
+
+@keyframes cursor {
+  0%, 100% { border-color: #6c5ce7; }
+  50% { border-color: transparent; }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Developer";
+  }
+  21%, 40% {
+    content: "Machine Learning Explorer";
+  }
+  41%, 60% {
+    content: "Web Dev.";
+  }
+  61%, 80% {
+    content: "Data Science Learner";
+  }
+  81%, 100% {
+    content: "Cybersecurity Curious";
+  }
+}
+
+
