@@ -138,12 +138,13 @@ h2 {
 }
 
 
-
 .typing {
   position: relative;
   font-weight: bold;
   font-size: 1.2em; 
-  color: #6c5ce7; 
+  color: #6c5ce7;
+  display: inline-block;
+  min-width: 560px; 
 }
 
 .typing::after {
@@ -161,13 +162,13 @@ h2 {
 
 @keyframes words {
   0%, 20% {
-    content: "Developer";
+    content: "Developer                  ";
   }
   21%, 40% {
     content: "Machine Learning Explorer";
   }
   41%, 60% {
-    content: "Web Dev.";
+    content: "Web Dev.                 ";
   }
   61%, 80% {
     content: "Data Science Learner";
