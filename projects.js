@@ -22,15 +22,6 @@ async function loadProjects() {
   }
 }
 
-function escapeHtml(str = "") {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
 function renderProjectCard(p) {
   const title = escapeHtml(p.title || "Untitled Project");
   const tag = escapeHtml(p.tag || "Project");
@@ -64,11 +55,11 @@ function renderProjectCard(p) {
 
   return `
     <article class="card">
-      ${imageHtml}
       <div class="card-head">
         <h3>${title}</h3>
         <span class="pill">${tag}</span>
       </div>
+      ${imageHtml}
       ${bulletsHtml}
       ${techHtml}
       <div class="card-actions">
@@ -77,6 +68,16 @@ function renderProjectCard(p) {
       </div>
     </article>
   `;
+}
+
+// Basic HTML escaping
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 document.addEventListener("DOMContentLoaded", loadProjects);

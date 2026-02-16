@@ -1,4 +1,3 @@
-<!-- Hicham Sidaoui | Portfolio -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +17,8 @@
 </head>
 
 <body>
-  <!-- optional background effect -->
   <div class="rain" aria-hidden="true"></div>
 
-  <!-- Top Nav -->
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Go to top">HS</a>
 
@@ -29,7 +26,7 @@
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-	  <a href="#achievements">Achievements</a>
+      <a href="#achievements">Achievements</a>
     </nav>
 
     <a class="cta" href="#contact">Hire / Collaborate</a>
@@ -45,9 +42,8 @@
       <div class="hero-right">
         <h1>Hello, I’m <span class="highlight">Hicham Sidaoui</span></h1>
 
-        <!-- Your CSS typing effect can target .typing::after -->
         <p class="subtitle">
-          Computer Science student focused on <span class="typing" aria-label="focus areas"></span>
+          A Computer Scientist and <span class="typing" aria-label="focus areas"></span>
         </p>
 
         <p class="bio">
@@ -57,103 +53,82 @@
 
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn ghost" href="#contact">Contact Me</a>
-        </div>
-
-        <div class="social-icons" aria-label="Social links">
-          <a href="https://github.com/xAGS1" target="_blank" rel="noopener" aria-label="GitHub profile">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="mailto:hisham.gs@hotmail.com" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+          <a class="btn primary" href="#achievements">View Achievements</a>
         </div>
       </div>
     </section>
 
     <!-- Projects (JSON-driven) -->
     <section id="projects" class="section">
-      <h2>Best Projects</h2>
-      <p class="section-lead">A curated selection of projects I’m most proud of.</p>
+      <h2>Selected Projects</h2>
+      <p class="section-lead">A selection of some of projects i've worked on.</p>
 
-      <!-- error message if JSON fails -->
       <p id="projectsError" style="display:none; color: rgba(255,120,120,0.9); margin-top: 12px;"></p>
 
-      <!-- projects will render here -->
       <div id="projectsGrid" class="grid" aria-live="polite"></div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
       <h2>Skills</h2>
-
       <div class="skills">
-        <div class="skill-col">
+        <div class="skill-card">
           <h3>Languages</h3>
           <p>Java, Python, C/C++, JavaScript, SQL</p>
         </div>
-
-        <div class="skill-col">
+        <div class="skill-card">
           <h3>Frameworks</h3>
           <p>FastAPI, Next.js, Tailwind, .NET</p>
         </div>
-
-        <div class="skill-col">
+        <div class="skill-card">
           <h3>Areas</h3>
           <p>AI/ML, Backend APIs, IoT/Embedded, Security fundamentals</p>
         </div>
       </div>
     </section>
 
-<!-- Achievements -->
-<section id="achievements" class="section">
-  <h2>Achievements</h2>
-  <p class="section-lead">Highlights and awards.</p>
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <p class="section-lead">Highlights and awards.</p>
 
-  <div class="achievements">
-    <div class="ach-card">
-      <h3>Awards</h3>
-      <ul>
-        <li>1st Place Transformation Hackathon</li>
-        <li>Winner Dev Sandbox Hackathon [Team ViT]</li>
-      </ul>
-    </div>
+      <div class="achievements">
+        <div class="ach-card">
+          <h3>Awards</h3>
+          <ul>
+            <li>1st Place Transformation Hackathon</li>
+            <li>Winner Dev Sandbox Hackathon [Team ViT]</li>
+          </ul>
+        </div>
 
-    <div class="ach-card">
-      <h3>Certifications</h3>
-      <ul>
-        <li>Calculus for Machine Learning & Data Science</li>
-        <li>Linear Algebra for Machine Learning & Data Science</li>
-        <li>Probability & Statistics for ML & Data Science</li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <div class="ach-card">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Calculus for Machine Learning & Data Science</li>
+            <li>Linear Algebra for Machine Learning & Data Science</li>
+            <li>Probability & Statistics for ML & Data Science</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="section-lead">Reach me here:</p>
 
-<!-- Contact -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p class="section-lead">
-    Reach me here:
-  </p>
-
-  <div class="contact-icons" aria-label="Contact links">
-    <a href="mailto:hisham.gs@hotmail.com" aria-label="Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-    <a href="https://github.com/xAGS1" target="_blank" rel="noopener" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-  </div>
-</section>
-
+      <div class="contact-icons" aria-label="Contact links">
+        <a href="mailto:hisham.gs@hotmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/xAGS1" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
 
     <footer class="footer">
       <span>© <span id="year"></span> Hicham Sidaoui</span>
@@ -161,11 +136,42 @@
   </main>
 
   <script>
-    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
-  <!-- JSON projects renderer -->
   <script src="./projects.js"></script>
+  <script>
+  const roles = [
+    "AI-Focused",
+    "Cybersecurity Curious",
+    "Full-Stack Learner"
+  ];
+
+  const el = document.querySelector(".typing");
+  let i = 0, j = 0, deleting = false;
+
+  function tick(){
+    const word = roles[i];
+    if(!deleting){
+      j++;
+      el.textContent = word.slice(0, j);
+      if(j === word.length){
+        deleting = true;
+        setTimeout(tick, 1200);
+        return;
+      }
+    }else{
+      j--;
+      el.textContent = word.slice(0, j);
+      if(j === 0){
+        deleting = false;
+        i = (i + 1) % roles.length;
+      }
+    }
+    setTimeout(tick, deleting ? 45 : 75);
+  }
+  tick();
+</script>
+
 </body>
 </html>
