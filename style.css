@@ -152,15 +152,23 @@ h1{
 
 /* Typing effect (simple) */
 .typing{
-  color: var(--accent);
+  color: var(--accent);  
   font-weight: 700;
+  white-space: nowrap;
 }
+
+/* caret as a real | character */
 .typing::after{
-  content: "";
-  border-right: 2px solid rgba(255,255,255,0.7);
-  padding-right: 6px;
-  animation: caret 1s steps(1) infinite;
+  content: "|";
+  color: var(--accent);
+  margin-left: 4px;
+  animation: blink 1s steps(1) infinite;
 }
+
+@keyframes blink{
+  50%{ opacity: 0; }
+}
+
 @keyframes caret{
   50%{ border-right-color: transparent; }
 }
@@ -235,16 +243,23 @@ h1{
   white-space: nowrap;
 }
 
-/* Project image */
 .project-img{
   width: 100%;
-  height: clamp(160px, 18vw, 220px);
+  aspect-ratio: 16 / 9;
+  height: auto;                 
+  max-height: 150px;            
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--border);
-  margin: 12px 0 12px;
+  margin: 10px 0 12px;
   display: block;
 }
+
+@media (max-width: 700px){
+  .project-img{ max-height: 180px; } 
+}
+
+
 
 .card ul{
   margin: 10px 0 0;

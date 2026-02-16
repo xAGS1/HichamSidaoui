@@ -41,10 +41,10 @@
 
       <div class="hero-right">
         <h1>Hello, I’m <span class="highlight">Hicham Sidaoui</span></h1>
+<p class="subtitle">
+  A Computer Scientist and <span class="typing"></span>
+</p>
 
-        <p class="subtitle">
-          A Computer Scientist and <span class="typing" aria-label="focus areas"></span>
-        </p>
 
         <p class="bio">
           I blend creativity with engineering to build impactful solutions. I explore AI, machine learning,
@@ -140,9 +140,10 @@
   </script>
 
   <script src="./projects.js"></script>
-  <script>
+<script>
   const roles = [
     "AI-Focused",
+    "Backend Engineer",
     "Cybersecurity Curious",
     "Full-Stack Learner"
   ];
@@ -152,15 +153,16 @@
 
   function tick(){
     const word = roles[i];
+
     if(!deleting){
       j++;
       el.textContent = word.slice(0, j);
       if(j === word.length){
         deleting = true;
-        setTimeout(tick, 1200);
+        setTimeout(tick, 1200); // pause when fully typed
         return;
       }
-    }else{
+    } else {
       j--;
       el.textContent = word.slice(0, j);
       if(j === 0){
@@ -168,10 +170,13 @@
         i = (i + 1) % roles.length;
       }
     }
-    setTimeout(tick, deleting ? 45 : 75);
+
+    setTimeout(tick, deleting ? 45 : 70);
   }
+
   tick();
 </script>
+
 
 </body>
 </html>
