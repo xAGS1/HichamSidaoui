@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "title": "Unsupervised LLM Routing Map",
+      "tag": "NLP + Clustering",
+      "bullets": [
+        "Analyzed 4,875 UltraChat prompt–response pairs to map usage patterns at scale.",
+        "Discovered 189 prompt families and 75 response modes using unsupervised clustering."
+      ],
+      "tech": ["SentenceTransformers", "UMAP", "HDBSCAN", "Python"],
+      "links": {
+        "github": "",
+        "demo": ""
+      },
+      "image": "assets/projects/llm-routing-map.png"
+    },
+    {
+      "title": "SafeLink – Mining Safety Monitoring Dashboard",
+      "tag": "IoT + Full-Stack",
+      "bullets": [
+        "Built a responsive dashboard streaming live environmental + machine telemetry.",
+        "Integrated 3 ESP microcontrollers and automated alerts for worker safety and machine health."
+      ],
+      "tech": ["ESP", "Sensors", "Python", "Web Dashboard"],
+      "links": {
+        "github": "",
+        "demo": ""
+      },
+      "image": "assets/1770569121113.jpg"
+    },
+    {
+      "title": "Real-Time Image Analyzer (YOLO + OCR)",
+      "tag": "Computer Vision",
+      "bullets": [
+        "Implemented real-time object detection with YOLO and text extraction via OCR.",
+        "Optimized inference pipeline for live camera/video input with clean visual outputs."
+      ],
+      "tech": ["YOLO", "OCR", "OpenCV", "Python"],
+      "links": {
+        "github": "",
+        "demo": ""
+      },
+      "image": "assets/projects/yolo-ocr.png"
+    }
+  ]
+}

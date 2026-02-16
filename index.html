@@ -1,61 +1,171 @@
 <!-- Hicham Sidaoui | Portfolio -->
-
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Keep ONLY one viewport meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Hicham Sidaoui | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="description" content="Computer Science student building AI, web, and embedded systems projects. Portfolio, projects, and contact." />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
-
 <body>
+  <!-- optional background effect -->
+  <div class="rain" aria-hidden="true"></div>
 
-  <div class ="rain"></div>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Go to top">HS</a>
 
-  <div class="container">
-    <div class="left">
-      <img src="assets/avatar.png" alt="Profile" class="avatar">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+	  <a href="#achievements">Achievements</a>
+    </nav>
 
+    <a class="cta" href="#contact">Hire / Collaborate</a>
+  </header>
+
+  <main id="top" class="page">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <img src="./assets/avatar.png" alt="Portrait of Hicham Sidaoui" class="avatar" />
+      </div>
+
+      <div class="hero-right">
+        <h1>Hello, I’m <span class="highlight">Hicham Sidaoui</span></h1>
+
+        <!-- Your CSS typing effect can target .typing::after -->
+        <p class="subtitle">
+          Computer Science student focused on <span class="typing" aria-label="focus areas"></span>
+        </p>
+
+        <p class="bio">
+          I blend creativity with engineering to build impactful solutions. I explore AI, machine learning,
+          web development, and embedded systems through projects, hackathons, and real-world implementations.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://github.com/xAGS1" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:hisham.gs@hotmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (JSON-driven) -->
+    <section id="projects" class="section">
+      <h2>Best Projects</h2>
+      <p class="section-lead">A curated selection of projects I’m most proud of.</p>
+
+      <!-- error message if JSON fails -->
+      <p id="projectsError" style="display:none; color: rgba(255,120,120,0.9); margin-top: 12px;"></p>
+
+      <!-- projects will render here -->
+      <div id="projectsGrid" class="grid" aria-live="polite"></div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="skills">
+        <div class="skill-col">
+          <h3>Languages</h3>
+          <p>Java, Python, C/C++, JavaScript, SQL</p>
+        </div>
+
+        <div class="skill-col">
+          <h3>Frameworks</h3>
+          <p>FastAPI, Next.js, Tailwind, .NET</p>
+        </div>
+
+        <div class="skill-col">
+          <h3>Areas</h3>
+          <p>AI/ML, Backend APIs, IoT/Embedded, Security fundamentals</p>
+        </div>
+      </div>
+    </section>
+
+<!-- Achievements -->
+<section id="achievements" class="section">
+  <h2>Achievements</h2>
+  <p class="section-lead">Highlights and awards.</p>
+
+  <div class="achievements">
+    <div class="ach-card">
+      <h3>Awards</h3>
+      <ul>
+        <li>1st Place Transformation Hackathon</li>
+        <li>Winner Dev Sandbox Hackathon [Team ViT]</li>
+      </ul>
     </div>
 
-
-    <div class="right">
-      <h1>Hello, I am <span class="highlight">Hicham Sidaoui</span></h1>
-      <h2>I'm a <span class="typing"></span></h2>
-
-      
-     <p class="bio">
-  I'm a passionate explorer of the digital world, blending creativity with engineering to build impactful solutions.
-  As a Computer Science major at King Saud University, I’ve built a strong academic foundation while immersing myself in AI,
-   machine learning, and embedded systems -- not just through coursework, but through real-world hackathons, internships, 
-   and applied engineering experiences.
-</p>
-
-<p class="bio">
-  I really enjoy exploring new ideas and figuring out how things work. Whether it’s learning new technologies, frameworks, or concepts, I’m always looking for ways to grow and build meaningful solutions that make a difference.
-</p>
-
-
-<div class="social-icons">
-  <a href="https://github.com/xAGS1"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/"><i class="fab fa-linkedin-in"></i></a>
-</div>
-
-<a href="mailto:hisham.gs@hotmail.com" class="contact-button">Contact me</a>
-
+    <div class="ach-card">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Calculus for Machine Learning & Data Science</li>
+        <li>Linear Algebra for Machine Learning & Data Science</li>
+        <li>Probability & Statistics for ML & Data Science</li>
+      </ul>
     </div>
   </div>
-</body>
+</section>
 
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p class="section-lead">
+    Reach me here:
+  </p>
+
+  <div class="contact-icons" aria-label="Contact links">
+    <a href="mailto:hisham.gs@hotmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://github.com/xAGS1" target="_blank" rel="noopener" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</section>
+
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Hicham Sidaoui</span>
+    </footer>
+  </main>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- JSON projects renderer -->
+  <script src="./projects.js"></script>
+</body>
 </html>
