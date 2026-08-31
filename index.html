@@ -2,181 +2,311 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Keep ONLY one viewport meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Hicham Sidaoui | Portfolio</title>
-  <meta name="description" content="Computer Science student building AI, web, and embedded systems projects. Portfolio, projects, and contact." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-
+  <meta name="theme-color" content="#08090b" />
+  <meta name="description" content="Hicham Sidaoui — AI/ML engineer and researcher building intelligent systems across retrieval, agentic AI, computer vision, and backend engineering." />
+  <meta property="og:title" content="Hicham Sidaoui — AI Engineer & Researcher" />
+  <meta property="og:description" content="Selected work in AI systems, research, retrieval, LLMs, computer vision, and backend engineering." />
+  <meta property="og:type" content="website" />
+  <title>Hicham Sidaoui — AI Engineer & Researcher</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
-  <div class="rain" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Go to top">HS</a>
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="#achievements">Achievements</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Hicham Sidaoui home">HS<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
     </nav>
-
-    <a class="cta" href="#contact">Hire / Collaborate</a>
+    <div class="header-actions">
+      <a class="text-link header-link" href="./assets/Hicham_Sidaoui_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      <a class="button button-small" href="mailto:hicham.gs@hotmail.com">Contact</a>
+    </div>
   </header>
 
-  <main id="top" class="page">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-left">
-        <img src="./assets/avatar.png" alt="Portrait of Hicham Sidaoui" class="avatar" />
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-kicker reveal">
+        <span class="status-dot"></span>
+        Riyadh, Saudi Arabia · Open to AI / ML opportunities
       </div>
 
-      <div class="hero-right">
-        <h1>Hello, I’m <span class="highlight">Hicham Sidaoui</span></h1>
-<p class="subtitle">
-  A Computer Scientist and <span class="typing"></span>
-</p>
+      <h1 class="hero-title reveal">
+        I build intelligent systems<br />
+        <span>that hold up under scrutiny.</span>
+      </h1>
 
-
-        <p class="bio">
-          I blend creativity with engineering to build impactful solutions. I explore AI, machine learning,
-          web development, and embedded systems through projects, hackathons, and real-world implementations.
+      <div class="hero-bottom reveal">
+        <p class="hero-copy">
+          Hicham Sidaoui is an <strong>AI/ML engineer and researcher</strong> working across
+          retrieval, agentic systems, computer vision, and production-minded backend engineering.
         </p>
+        <div class="hero-cta-row">
+          <a class="button" href="#work">Explore selected work <span>↓</span></a>
+          <a class="text-link" href="https://github.com/xAGS1" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="text-link" href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
 
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn primary" href="#achievements">View Achievements</a>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit-node node-a"></div>
+        <div class="orbit-node node-b"></div>
+        <div class="orbit-core">HS</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Profile highlights">
+      <div class="signal reveal">
+        <span class="signal-value">01</span>
+        <span class="signal-label">peer-reviewed publication</span>
+      </div>
+      <div class="signal reveal">
+        <span class="signal-value">4.82</span>
+        <span class="signal-label">GPA / 5.00 · KSU</span>
+      </div>
+      <div class="signal reveal">
+        <span class="signal-value">02</span>
+        <span class="signal-label">hackathon wins</span>
+      </div>
+      <div class="signal reveal">
+        <span class="signal-value">Top 10</span>
+        <span class="signal-label">GAC project placement</span>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell section-block">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">01 / SELECTED WORK</p>
+          <h2>Built to be inspected,<br />not just displayed.</h2>
+        </div>
+        <p>Flagship research and engineering projects, with the evidence that matters.</p>
+      </div>
+
+      <article class="feature feature-trace reveal">
+        <div class="feature-copy">
+          <div class="project-meta">
+            <span>01</span>
+            <span>RESEARCH · CODE RETRIEVAL · 2025—PRESENT</span>
+          </div>
+          <h3>TRACE</h3>
+          <p class="feature-subtitle">Structural Embeddings for Repository-Level Code Retrieval</p>
+          <p class="feature-description">
+            A graph-augmented retrieval system that combines pretrained text embeddings with
+            structural function representations learned from repository-wide call, import,
+            inheritance, and containment relationships.
+          </p>
+          <div class="metric-grid">
+            <div><strong>+1.77 ± 0.20</strong><span>pp nDCG@10 on structurally distant queries</span></div>
+            <div><strong>647</strong><span>real developer queries</span></div>
+            <div><strong>4</strong><span>large Python repositories</span></div>
+            <div><strong>25K / 46K</strong><span>nodes / edges at largest scale</span></div>
+          </div>
+          <div class="tags" aria-label="TRACE technologies">
+            <span>Python</span><span>Graph ML</span><span>Embeddings</span><span>Retrieval</span><span>Evaluation</span>
+          </div>
+          <p class="micro-note">Manuscript submitted to <em>Empirical Software Engineering</em> (EMSE).</p>
+        </div>
+
+        <div class="trace-visual" aria-label="Abstract visualization of repository graph retrieval">
+          <div class="visual-label">REPOSITORY GRAPH / RETRIEVAL SPACE</div>
+          <svg viewBox="0 0 640 520" role="img" aria-label="Network graph visualization">
+            <defs>
+              <linearGradient id="traceLine" x1="0" x2="1">
+                <stop offset="0%" stop-color="#6e7cff" stop-opacity=".2" />
+                <stop offset="55%" stop-color="#8ca0ff" stop-opacity=".8" />
+                <stop offset="100%" stop-color="#c6d0ff" stop-opacity=".25" />
+              </linearGradient>
+            </defs>
+            <g class="network-lines" stroke="url(#traceLine)" fill="none" stroke-width="1.2">
+              <path d="M85 110 L210 72 L326 150 L470 78 L566 164" />
+              <path d="M85 110 L154 240 L326 150 L382 304 L566 164" />
+              <path d="M154 240 L98 382 L282 430 L382 304 L535 401" />
+              <path d="M210 72 L154 240 L382 304 L470 78" />
+              <path d="M326 150 L282 430" />
+              <path d="M566 164 L535 401 L382 304" />
+              <path d="M98 382 L382 304" />
+            </g>
+            <g class="network-nodes">
+              <circle cx="85" cy="110" r="8" /><circle cx="210" cy="72" r="5" />
+              <circle cx="326" cy="150" r="13" class="active-node" /><circle cx="470" cy="78" r="6" />
+              <circle cx="566" cy="164" r="8" /><circle cx="154" cy="240" r="9" />
+              <circle cx="382" cy="304" r="12" class="active-node" /><circle cx="98" cy="382" r="6" />
+              <circle cx="282" cy="430" r="8" /><circle cx="535" cy="401" r="6" />
+            </g>
+            <g class="node-labels">
+              <text x="340" y="145">query target</text>
+              <text x="395" y="300">structural neighbor</text>
+              <text x="88" y="101">call</text>
+              <text x="478" y="70">import</text>
+              <text x="540" y="395">containment</text>
+            </g>
+          </svg>
+          <div class="visual-footer">
+            <span>TEXT EMBEDDING</span><span>+</span><span>STRUCTURAL SIGNAL</span><span>→</span><strong>RERANK</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature-vesper reveal">
+        <div class="vesper-visual" aria-label="Multi-agent workflow visualization">
+          <div class="visual-label">EVIDENCE-GROUNDED MULTI-AGENT WORKFLOW</div>
+          <div class="council-stage">
+            <div class="agent agent-a"><span>01</span><strong>Research</strong><small>sources + retrieval</small></div>
+            <div class="agent agent-b"><span>02</span><strong>Critic</strong><small>challenge assumptions</small></div>
+            <div class="agent agent-c"><span>03</span><strong>Builder</strong><small>technical feasibility</small></div>
+            <div class="agent agent-d"><span>04</span><strong>Strategist</strong><small>trade-offs + decision</small></div>
+            <div class="council-center"><span>COUNCIL</span><strong>Grounded synthesis</strong></div>
+            <div class="connector connector-1"></div><div class="connector connector-2"></div>
+            <div class="connector connector-3"></div><div class="connector connector-4"></div>
+          </div>
+          <div class="pipeline-line">
+            <span>QUESTION</span><i></i><span>RESEARCH</span><i></i><span>DEBATE</span><i></i><span>EVIDENCE</span><i></i><strong>DECISION</strong>
+          </div>
+        </div>
+
+        <div class="feature-copy">
+          <div class="project-meta">
+            <span>02</span>
+            <span>AGENTIC AI · BACKEND · 2026—PRESENT</span>
+          </div>
+          <h3>Vesper Council</h3>
+          <p class="feature-subtitle">Evidence-Grounded Multi-Agent Consulting Platform</p>
+          <p class="feature-description">
+            An agentic AI platform where specialized consultant agents research, challenge,
+            and refine technical ideas using retrieval-grounded evidence and structured
+            multi-agent workflows.
+          </p>
+          <div class="stack-list">
+            <div><span>Orchestration</span><strong>LangGraph · LangChain</strong></div>
+            <div><span>Backend</span><strong>FastAPI · Pydantic</strong></div>
+            <div><span>Data</span><strong>PostgreSQL · pgvector</strong></div>
+            <div><span>Reliability</span><strong>Evaluation · Observability · CI/CD</strong></div>
+          </div>
+          <span class="wip-badge">BUILDING IN PUBLIC / WIP</span>
+        </div>
+      </article>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section id="research" class="section-shell section-block research-section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">02 / RESEARCH</p>
+          <h2>Published work.</h2>
+        </div>
+      </div>
+
+      <a class="paper-card reveal" href="https://aclanthology.org/2026.osact-1.26/" target="_blank" rel="noopener">
+        <div class="paper-index">P.01</div>
+        <div class="paper-copy">
+          <p class="paper-venue">OSACT7 @ LREC 2026 · ACL Anthology · Palma, Spain</p>
+          <h3>AGS-KSU at QIAS 2026: A Comparative Study of Prompting and LLM Approaches for Structured Islamic Inheritance Reasoning</h3>
+          <p>
+            Compared QLoRA fine-tuning, a deterministic validation pipeline, and GPT-5.4 prompting
+            configurations on structured Arabic inheritance reasoning. Best configuration reached
+            <strong>0.84 MIR-E</strong> on the official test set.
+          </p>
+        </div>
+        <div class="paper-arrow">↗</div>
+      </a>
+    </section>
+
+    <section class="section-shell section-block experience-section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">03 / EXPERIENCE</p>
+          <h2>Applied engineering.</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">JUN — AUG 2026</div>
+          <div>
+            <h3>AI Product Engineering Trainee</h3>
+            <p class="timeline-org">Ramz Alakwad Advisory · Riyadh</p>
+            <p>Built an AI workflow that transforms project ideas into structured PRDs, MVP scopes, implementation plans, and relational database schemas using reusable prompt pipelines and validated JSON outputs.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">JUN — AUG 2023</div>
+          <div>
+            <h3>Robotics Intern</h3>
+            <p class="timeline-org">Nazm Alriyad Company · Riyadh</p>
+            <p>Supported indoor robotics demonstrations by preparing navigation maps and configuring RFID/NFC components for controlled client environments.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell section-block about-section">
+      <div class="about-main reveal">
+        <p class="eyebrow">04 / ABOUT</p>
+        <h2>I care about the layer after the model.</h2>
+        <p>
+          I’m a Computer Science graduate from King Saud University focused on AI systems that are
+          measurable, inspectable, and engineered beyond the notebook. My work spans retrieval,
+          LLM workflows, computer vision, backend APIs, and research evaluation.
+        </p>
+        <p>
+          I completed KAUST Academy’s AI Specialization and have built across both software and
+          hardware environments, from graph retrieval experiments to ESP32-based monitoring systems.
+        </p>
+      </div>
+
+      <div class="about-side reveal">
+        <div class="stack-block">
+          <span class="stack-heading">CORE STACK</span>
+          <p>Python · PyTorch · FastAPI · PostgreSQL · Docker · Git</p>
+        </div>
+        <div class="stack-block">
+          <span class="stack-heading">AI / ML</span>
+          <p>LLM APIs · RAG · LangGraph · SentenceTransformers · OpenCV · YOLOv8 · Scikit-learn</p>
+        </div>
+        <div class="stack-block">
+          <span class="stack-heading">FOUNDATIONS</span>
+          <p>Java · SQL · C/C++ · REST APIs · Linux · LaTeX · ESP32</p>
         </div>
       </div>
     </section>
 
-    <!-- Projects (JSON-driven) -->
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
-      <p class="section-lead">A selection of some of projects i've worked on.</p>
-
-      <p id="projectsError" style="display:none; color: rgba(255,120,120,0.9); margin-top: 12px;"></p>
-
-      <div id="projectsGrid" class="grid" aria-live="polite"></div>
+    <section class="section-shell awards-section">
+      <div class="award reveal"><span>01</span><strong>1st Place</strong><p>Transformation Hackathon · King Saud University · 2025</p></div>
+      <div class="award reveal"><span>02</span><strong>Winner</strong><p>Dev Sandbox Hackathon · Team ViT × Zid · 2025</p></div>
+      <div class="award reveal"><span>03</span><strong>Top 10%</strong><p>Dal Kaggle Competition · Arabian Sheep Classification · 2025</p></div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill-card">
-          <h3>Languages</h3>
-          <p>Java, Python, C/C++, JavaScript, SQL</p>
-        </div>
-        <div class="skill-card">
-          <h3>Frameworks</h3>
-          <p>FastAPI, Next.js, Tailwind, .NET</p>
-        </div>
-        <div class="skill-card">
-          <h3>Areas</h3>
-          <p>AI/ML, Backend APIs, IoT/Embedded, Security fundamentals</p>
-        </div>
+    <section class="contact-section section-shell reveal">
+      <p class="eyebrow">05 / CONTACT</p>
+      <h2>Have a hard problem?</h2>
+      <a class="contact-email" href="mailto:hicham.gs@hotmail.com">hicham.gs@hotmail.com ↗</a>
+      <div class="contact-links">
+        <a href="https://github.com/xAGS1" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="./assets/Hicham_Sidaoui_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae ↗</a>
       </div>
     </section>
-
-    <!-- Achievements -->
-    <section id="achievements" class="section">
-      <h2>Achievements</h2>
-      <p class="section-lead">Highlights and awards.</p>
-
-      <div class="achievements">
-        <div class="ach-card">
-          <h3>Awards</h3>
-          <ul>
-            <li>1st Place Transformation Hackathon</li>
-            <li>Winner Dev Sandbox Hackathon [Team ViT]</li>
-          </ul>
-        </div>
-
-        <div class="ach-card">
-          <h3>Certifications</h3>
-          <ul>
-            <li>Calculus for Machine Learning & Data Science</li>
-            <li>Linear Algebra for Machine Learning & Data Science</li>
-            <li>Probability & Statistics for ML & Data Science</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="section-lead">Reach me here:</p>
-
-      <div class="contact-icons" aria-label="Contact links">
-        <a href="mailto:hisham.gs@hotmail.com" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="https://github.com/xAGS1" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/hicham-sidaoui-610659329/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> Hicham Sidaoui</span>
-    </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Hicham Sidaoui</span>
+    <span>AI / ML ENGINEERING · RESEARCH</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 
   <script src="./projects.js"></script>
-<script>
-  const roles = [
-    "AI-Focused",
-    "Backend Engineer",
-    "Cybersecurity Curious",
-    "Full-Stack Learner"
-  ];
-
-  const el = document.querySelector(".typing");
-  let i = 0, j = 0, deleting = false;
-
-  function tick(){
-    const word = roles[i];
-
-    if(!deleting){
-      j++;
-      el.textContent = word.slice(0, j);
-      if(j === word.length){
-        deleting = true;
-        setTimeout(tick, 1200); // pause when fully typed
-        return;
-      }
-    } else {
-      j--;
-      el.textContent = word.slice(0, j);
-      if(j === 0){
-        deleting = false;
-        i = (i + 1) % roles.length;
-      }
-    }
-
-    setTimeout(tick, deleting ? 45 : 70);
-  }
-
-  tick();
-</script>
-
-
+  <script src="./script.js"></script>
 </body>
 </html>
