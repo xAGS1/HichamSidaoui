@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://xags1.github.io/HichamSidaoui/sitemap.xml
