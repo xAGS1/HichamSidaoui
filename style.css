@@ -332,6 +332,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-card .project-stat { margin-top: auto; padding-top: 42px; font: 500 1.15rem/1.2 "DM Mono", monospace; color: #d7dbe3; }
 .project-card .project-stat span { display: block; margin-top: 7px; font-size: .58rem; color: var(--muted-2); letter-spacing: .05em; text-transform: uppercase; }
 .project-card .tags { margin-top: 18px; position: relative; z-index: 1; }
+.project-link { position: relative; z-index: 2; align-self: flex-start; margin-top: 22px; color: var(--accent); font: 500 .72rem/1.4 "DM Mono", monospace; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 5px; }
+.project-link:hover, .project-link:focus-visible { color: var(--text); }
 
 .research-section { padding-bottom: 80px; }
 .paper-card { border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); padding: 42px 0; display: grid; grid-template-columns: 110px 1fr 80px; gap: 24px; text-decoration: none; transition: background .25s ease, padding .25s ease; }

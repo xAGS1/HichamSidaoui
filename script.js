@@ -24,6 +24,7 @@ if (grid) {
       <div class="tags">
         ${(project.tech || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
       </div>
+      ${project.url ? `<a class="project-link" href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer" aria-label="View ${escapeHtml(project.title)} on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>` : ""}
     </article>
   `).join("");
 }

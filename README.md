@@ -11,6 +11,11 @@ Structural embeddings for repository-level code retrieval.
 
 Evaluated graph-augmented code representations across 4 large Python repositories using 647 real developer queries, with consistent gains on structurally distant retrieval tasks.
 
+### MAWARITH AI
+Arabic-first Islamic inheritance reasoning assistant with LLM-driven case parsing, a deterministic rules engine, fractional verification, explanations, and clarification/referral handling.
+
+[Source code](https://github.com/xAGS1/mawarith-ai)
+
 ### Vesper Council
 Evidence-grounded multi-agent consulting platform.
 
